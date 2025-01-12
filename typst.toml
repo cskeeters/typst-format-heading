@@ -1,0 +1,7 @@
+[package]
+name = "format-headings"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Chad Skeeters"]
+license = ""
+description = "Package for formatting headings"
