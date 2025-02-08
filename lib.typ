@@ -5,6 +5,10 @@
   below:1.0em,
   body) = {
 
+  show heading.where(level:1): set block(above: above, below: below)
+  show heading.where(level:2): set block(above: above, below: below)
+  show heading.where(level:3): set block(above: above, below: below)
+
   show heading.where(level:1): it => {
     if break_before_h1 {
       if hardcopy {
@@ -13,16 +17,9 @@
         pagebreak(weak: true)
       }
     }
-    block(width: 100%, above: above, below: below, it)
+    it
   }
 
-  show heading.where(level:2): it => {
-    block(above: 1.3em, below: 1em, it)
-  }
-
-  show heading.where(level:3): it => {
-    block(above: 1.3em, below: .9em, it)
-  }
   body
 }
 
