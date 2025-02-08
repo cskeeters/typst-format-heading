@@ -5,9 +5,7 @@
   below:1.0em,
   body) = {
 
-  show heading.where(level:1): set block(above: above, below: below)
-  show heading.where(level:2): set block(above: above, below: below)
-  show heading.where(level:3): set block(above: above, below: below)
+  show heading: set block(above: above, below: below)
 
   show heading.where(level:1): it => {
     if break_before_h1 {
